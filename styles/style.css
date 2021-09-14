@@ -4,11 +4,12 @@
     padding:  0;
     font-family: 'Roboto', sans-serif;
     transition: all 0.1s;
+    background-color: #f2f2f2;
 }
 
 #container
 {
-    min-width: 600px;
+    min-width: 800px;
     min-height: 400px;
     display: flex;
     flex-direction: column;
@@ -22,6 +23,7 @@ h2
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 30px;
+    color: #404040;
 }
 
 #new-item
@@ -34,6 +36,7 @@ h2
     border-radius: 4px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
+    background-color: white;
 }
 
 #new-item:focus
@@ -76,4 +79,58 @@ h2
 #nav
 {
     margin-bottom: 40px;
+}
+
+#items
+{
+    margin-bottom: 40px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.item
+{
+    width: 600px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #404040;
+}
+
+.item-name
+{
+    padding-top: 5px;
+}
+
+.icons
+{
+    height: 50px;
+    padding-top: 5px;
+}
+
+.fa-check-circle
+{
+    color: #44ce44;
+    font-size: 20px;
+    margin: 4px;
+}
+
+.fa-edit
+{
+    color: #4da6ff;
+    font-size: 20px;
+    margin: 4px;
+}
+
+.fa-times-circle
+{
+    color: crimson;
+    font-size: 20px;
+    margin: 4px;
 }
