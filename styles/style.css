@@ -9,13 +9,14 @@
 
 #container
 {
-    min-width: 800px;
+    min-width: 900px;
     min-height: 400px;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
     text-align: center;
+    margin-top: 50px;
 }
 
 h2
@@ -29,7 +30,7 @@ h2
 #new-item
 {
     padding: 10px;
-    width: 600px;
+    width: 800px;
     font-size: 20px;
     border: none;
     border: solid 2px #b3e6b3;
@@ -84,7 +85,7 @@ h2
 #items
 {
     margin-bottom: 40px;
-    width: 700px;
+    width: 900px;
     min-height: 50px;
     margin: auto;
 }
@@ -92,7 +93,7 @@ h2
 
 .item
 {
-    width: 700px;
+    width: 800px;
     height: 40px;
     display: flex;
     justify-content: space-between;
@@ -100,6 +101,7 @@ h2
     font-size: 20px;
     font-weight: bold;
     color: #404040;
+    margin: auto;
 }
 
 .item-name
