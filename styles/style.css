@@ -167,3 +167,32 @@ h2
 {
     color: crimson;
 }
+
+#clear-items
+{
+    padding: 10px;
+    margin-left: -6px;
+    font-size: 20px;
+    color: #8cd98c;
+    border: none;
+    border: solid 2px #b3e6b3;
+    border-radius: 4px;
+}
+
+#clear-items:focus
+{
+    outline: none !important;
+    border: solid 2px #b3e6b3;
+}
+
+#clear-items:hover
+{
+    cursor: pointer;
+    color: #b3e6b3;
+    border: solid 2px #d9f2d9;
+}
+
+#clear-items:active
+{
+    background-color: #d9d9d9;
+}
