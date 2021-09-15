@@ -9,4 +9,9 @@ $(document).ready(function()
     {
         $(this).closest('.item').find('.item-name').css({'text-decoration': 'line-through', 'color': '#cfc8c8'});
     });
+
+    $('.fa-times-circle').click(function()
+    {
+        $(this).closest('.item').remove();
+    });
 })
