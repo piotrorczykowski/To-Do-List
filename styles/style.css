@@ -93,7 +93,7 @@ h2
 
 .item
 {
-    width: 600px;
+    min-width: 700px;
     height: 40px;
     display: flex;
     justify-content: space-between;
@@ -121,6 +121,17 @@ h2
     margin: 4px;
 }
 
+.fa-check-circle:hover
+{
+    color: rgb(68, 233, 68);
+    cursor: pointer;
+}
+
+.fa-check-circle:active
+{
+    color: #44ce44;
+}
+
 .fa-edit
 {
     color: #4da6ff;
@@ -128,9 +139,31 @@ h2
     margin: 4px;
 }
 
+.fa-edit:hover
+{
+    color: #22bae8;
+    cursor: pointer;
+}
+
+.fa-edit:active
+{
+    color: #4da6ff;
+}
+
 .fa-times-circle
 {
     color: crimson;
     font-size: 20px;
     margin: 4px;
+}
+
+.fa-times-circle:hover
+{
+    color: rgb(252, 0, 50);
+    cursor: pointer;
+}
+
+.fa-times-circle:active
+{
+    color: crimson;
 }
