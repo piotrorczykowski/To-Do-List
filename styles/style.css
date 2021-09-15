@@ -84,16 +84,15 @@ h2
 #items
 {
     margin-bottom: 40px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
+    width: 700px;
+    min-height: 50px;
+    margin: auto;
 }
 
 
 .item
 {
-    min-width: 700px;
+    width: 700px;
     height: 40px;
     display: flex;
     justify-content: space-between;
@@ -112,6 +111,7 @@ h2
 {
     height: 50px;
     padding-top: 5px;
+    cursor: context-menu;
 }
 
 .fa-check-circle
