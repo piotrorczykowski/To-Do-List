@@ -7,7 +7,14 @@ $(document).ready(function()
  
     $('#items').on('click', '.fa-check-circle', function()
     {
-        $(this).closest('.item').find('.item-name').css({'text-decoration': 'line-through', 'color': '#cfc8c8'});
+        if($(this).closest('.item').find('.item-name').css('color') == 'rgb(207, 200, 200)')
+        {
+            $(this).closest('.item').find('.item-name').css({'text-decoration': 'none', 'color': '#404040'});
+        }
+        else
+        {
+            $(this).closest('.item').find('.item-name').css({'text-decoration': 'line-through', 'color': '#cfc8c8'});
+        }
     });
 
     $('#items').on('click', '.fa-times-circle', function()
