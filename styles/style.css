@@ -38,6 +38,9 @@ h2
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     background-color: white;
+    font-size: 20px;
+    font-weight: bold;
+    color: #404040;
 }
 
 #new-item:focus
@@ -91,7 +94,6 @@ h2
     margin-left: auto;
     margin-right: auto;
 }
-
 
 .item
 {
