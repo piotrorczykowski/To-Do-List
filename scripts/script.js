@@ -18,8 +18,9 @@ $(document).ready(function()
     
     function addItem()
     {
-        let start = '<div class="item">\n<span class="item-name">'
-        let end = '</span>\n<div class="icons">\n   <i class="fas fa-check-circle"></i>\n   <i class="fas fa-edit"></i>\n   <i class="fas fa-times-circle"></i>\n</div>'
+        let start = '<div class="item">\n   <input type="text" name="item-name" value="';
+        let end ='" class="item-name" disabled>\n<div class="icons">\n    <i class="fas fa-check-circle"></i>\n   <i class="fas fa-edit"></i>\n   <i class="fas fa-times-circle"></i>\n</div>'
+
         let item = start + $('#new-item').val() + end;
         $('#items').append(item);
         $('#new-item').val('');
@@ -39,6 +40,25 @@ $(document).ready(function()
         if(keycode == '13' && $('#new-item').val() != '')
         {
             addItem();
+        }
+    });
+
+
+    $('#items').on('click', '.fa-edit', function()
+    {
+        $(this).closest('.item').find('.item-name').prop('disabled',false);
+        let value = $(this).closest('.item').find('.item-name').val();
+        $(this).closest('.item').find('.item-name').val('');
+        $(this).closest('.item').find('.item-name').focus();
+        $(this).closest('.item').find('.item-name').val(value);
+    });
+
+    $('#items').on('keypress', '.item-name', function()
+    {
+        let keycode = (event.keyCode ? event.keyCode : event.which);
+        if(keycode == '13')
+        {
+            $(this).closest('.item').find('.item-name').prop("disabled", true);
         }
     });
 })

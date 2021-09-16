@@ -100,15 +100,16 @@ h2
     display: flex;
     justify-content: space-between;
     padding: 5px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #404040;
     margin: auto;
 }
 
 .item-name
 {
     padding-top: 5px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #404040;
 }
 
 .icons
